@@ -31,7 +31,7 @@ const SOCIAL_LINKS = [
     },
     {
         label: 'Twitch',
-        url: 'https://twitch.tv/melenitasdev',
+        url: 'https://www.twitch.tv/melenitasdev',
         icon: <Twitch className="h-5 w-5" />,
         color: 'hover:text-purple-400 hover:border-purple-400/30',
     },
@@ -118,14 +118,14 @@ export default function LeadMagnetPage() {
                             icon={<ChevronRight />}
                             className="shadow-primary/20 shadow-[0px_0px_20px_1px]"
                         />
-                        <Button
+                        {/* <Button
                             variant="secondary"
                             size="xl"
                             buttonType="navigation"
-                            navigationUrl="https://gamedev-academy.com"
+                            navigationUrl="http://localhost:3000"
                             placeHolder="Ir a la academia"
                             external
-                        />
+                        /> */}
                     </motion.div>
                 </div>
             </section>
@@ -251,16 +251,16 @@ export default function LeadMagnetPage() {
                         transition={{ duration: 0.5, delay: 0.15 }}
                         className="flex flex-col sm:flex-row gap-4 justify-center"
                     >
-                        <Button
+                        {/* <Button
                             variant="primary"
                             size="xl"
                             buttonType="navigation"
-                            navigationUrl="https://gamedev-academy.com"
+                            navigationUrl="http://localhost:3000"
                             placeHolder="Empieza tu formación"
                             icon={<ChevronRight />}
                             external
                             className="shadow-primary/20 shadow-[0px_0px_20px_1px]"
-                        />
+                        /> */}
                     </motion.div>
                 </div>
             </section>
@@ -272,14 +272,14 @@ export default function LeadMagnetPage() {
                         GameDev Academy
                     </span>
                     <p>© 2026 GameDev Academy. Todos los derechos reservados.</p>
-                    <a
-                        href="https://gamedev-academy.com"
+                    {/* <a
+                        href="http://localhost:3000"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
                     >
                         gamedev-academy.com
-                    </a>
+                    </a> */}
                 </div>
             </footer>
         </div>

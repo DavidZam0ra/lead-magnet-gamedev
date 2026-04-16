@@ -16,15 +16,6 @@ export default function NavBar() {
                     </span>
                 </div>
             </Link>
-
-            <a
-                href="https://gamedev-academy.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-black text-sm font-bold px-4 py-2 rounded-md hover:bg-gray-200 transition-colors min-w-24 text-center"
-            >
-                Únete ahora
-            </a>
         </nav>
     );
 }
