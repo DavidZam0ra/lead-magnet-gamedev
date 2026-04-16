@@ -1,12 +1,11 @@
-# Lead Magnet - GameDev Academy
+# Lead Magnet - Melenitas Dev
 
-Landing page simple para promocionar GameDev Academy con formato lead magnet:
+Landing page simple para promocionar Melenitas Dev con formato lead magnet:
 
 - Titulo principal
 - Descripcion corta
 - Video embebido
 - Enlaces a redes de `melenitasdev`
-- CTA hacia la web de la academia
 
 Proyecto hecho con mismo stack visual que el sitio principal:
 

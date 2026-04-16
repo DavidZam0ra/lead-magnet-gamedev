@@ -11,8 +11,7 @@ export default function NavBar() {
                         <Gamepad2 className="h-6 w-6 text-primary" />
                     </div>
                     <span className="font-bold text-xl tracking-tighter">
-                        GAMEDEV —{' '}
-                        <span className="text-primary">ACADEMY</span>
+                        <span className="text-primary">Melenitas</span> Dev
                     </span>
                 </div>
             </Link>

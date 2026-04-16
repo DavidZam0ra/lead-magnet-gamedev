@@ -1,5 +1,5 @@
 'use client';
-import { ChevronRight, Youtube, Twitter, Instagram, Github, Twitch } from 'lucide-react';
+import { ChevronRight, Youtube, Instagram, Twitch } from 'lucide-react';
 import { Button } from '@/app/components/button';
 import NavBar from '@/app/components/navbar';
 import { motion } from 'framer-motion';
@@ -12,22 +12,10 @@ const SOCIAL_LINKS = [
         color: 'hover:text-red-500 hover:border-red-500/30',
     },
     {
-        label: 'Twitter / X',
-        url: 'https://twitter.com/melenitasdev',
-        icon: <Twitter className="h-5 w-5" />,
-        color: 'hover:text-sky-400 hover:border-sky-400/30',
-    },
-    {
         label: 'Instagram',
         url: 'https://instagram.com/melenitasdev',
         icon: <Instagram className="h-5 w-5" />,
         color: 'hover:text-pink-500 hover:border-pink-500/30',
-    },
-    {
-        label: 'GitHub',
-        url: 'https://github.com/melenitasdev',
-        icon: <Github className="h-5 w-5" />,
-        color: 'hover:text-white hover:border-white/30',
     },
     {
         label: 'Twitch',
@@ -71,7 +59,7 @@ export default function LeadMagnetPage() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500" />
                         </span>
-                        Recurso gratuito — GameDev Academy
+                        Recurso gratuito
                     </motion.div>
 
                     {/* Title — placeholder, rellenar después */}
@@ -107,7 +95,7 @@ export default function LeadMagnetPage() {
                         initial="hidden"
                         animate="show"
                         custom={3}
-                        className="flex flex-col sm:flex-row gap-4 justify-center pt-2"
+                        className="flex flex-col items-center sm:flex-row gap-4 justify-center pt-2"
                     >
                         <Button
                             variant="primary"
@@ -144,7 +132,7 @@ export default function LeadMagnetPage() {
                             El vídeo que necesitabas ver
                         </h2>
                         <p className="text-gray-400 text-lg">
-                            melenitasdev te explica todo lo que desearía haber sabido al empezar.
+                            Melenitas Dev te explica todo lo que desearía haber sabido al empezar.
                         </p>
                     </motion.div>
 
@@ -159,7 +147,7 @@ export default function LeadMagnetPage() {
                         <iframe
                             className="absolute inset-0 w-full h-full"
                             src="https://www.youtube.com/embed/VIDEO_ID"
-                            title="GameDev Academy — Aprende desarrollo de videojuegos"
+                            title="Melenitas Dev — Aprende desarrollo de videojuegos"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                         />
@@ -199,12 +187,11 @@ export default function LeadMagnetPage() {
                         </div>
                         <div>
                             <p className="font-bold text-xl">melenitasdev</p>
-                            <p className="text-gray-400 text-sm">Fundador · GameDev Academy</p>
                         </div>
                     </motion.div>
 
                     {/* Social links grid */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                    <div className="flex justify-center gap-3 flex-wrap">
                         {SOCIAL_LINKS.map((s, i) => (
                             <motion.a
                                 key={s.label}
@@ -216,7 +203,7 @@ export default function LeadMagnetPage() {
                                 whileInView="show"
                                 viewport={{ once: true }}
                                 custom={i}
-                                className={`flex flex-col items-center gap-2 p-4 rounded-xl border border-[#27272a] bg-[#18181b] text-gray-400 transition-all duration-300 ${s.color} hover:bg-white/5 hover:-translate-y-0.5`}
+                                className={`flex flex-col items-center gap-2 p-4 w-32 rounded-xl border border-[#27272a] bg-[#18181b] text-gray-400 transition-all duration-300 ${s.color} hover:bg-white/5 hover:-translate-y-0.5`}
                             >
                                 {s.icon}
                                 <span className="text-xs font-medium">{s.label}</span>
@@ -240,7 +227,7 @@ export default function LeadMagnetPage() {
                             ¿Listo para el siguiente nivel?
                         </h2>
                         <p className="text-gray-400 text-lg max-w-xl mx-auto">
-                            Únete a GameDev Academy y aprende con proyectos reales, mentores de la industria y
+                            Únete a la academia y aprende con proyectos reales, mentores de la industria y
                             una comunidad que te impulsa.
                         </p>
                     </motion.div>
@@ -269,16 +256,16 @@ export default function LeadMagnetPage() {
             <footer className="py-10 border-t border-[#27272a] px-6">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
                     <span className="font-bold tracking-tighter uppercase italic text-white/60">
-                        GameDev Academy
+                        Melenitas Dev
                     </span>
-                    <p>© 2026 GameDev Academy. Todos los derechos reservados.</p>
+                    <p>© 2026 Melenitas Dev. Todos los derechos reservados.</p>
                     {/* <a
                         href="http://localhost:3000"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-primary transition-colors"
                     >
-                        gamedev-academy.com
+                        melenitasdev.com
                     </a> */}
                 </div>
             </footer>

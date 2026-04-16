@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: 'GameDev Academy — Aprende Desarrollo de Videojuegos',
+    title: 'Melenitas Dev — Aprende Desarrollo de Videojuegos',
     description: 'Domina Unity, Unreal Engine y C++ con un curriculum inmersivo diseñado por veteranos de la industria.',
 };
 
